@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using UniversidadClase.Models;
 
 namespace UniversidadClase.Data
 {
@@ -17,5 +18,6 @@ namespace UniversidadClase.Data
         }
 
         //Vamos a decirle a EF Core las tablas que va a crear
+        public DbSet<Estudiante> Estudiantes { get; set; }
     }
 }
